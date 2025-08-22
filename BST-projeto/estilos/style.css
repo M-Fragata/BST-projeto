@@ -4,14 +4,15 @@
     margin: 0px;
     padding: 0px;
 }
+
 body{
-    background-color: rgb(255, 154, 154);
+    background-color: black;
 }
 
 header{
     background-color: rgb(69, 69, 255);
     color: white;
-    height: 150px;
+    height: 200px;
     text-align: center;
 }
 
@@ -28,27 +29,26 @@ header p {
 nav{
     background-color: red;
     padding: 10px;
-    text-align: left;
 }
 
 nav > a{
     background-color: red;
     text-decoration: none;
     color: white;
-    padding: 10px 10px 10px 20px;
+    padding: 10px 10px 10px 10px;
+    font-weight: bolder;
+    margin-left: 20px;
 }
 
 nav > a:hover{
     background-color: white;
     color: red;
     text-decoration: underline;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
-main{
-    margin-top: 37px;
-    height: 100vh;
-}
+
+
 main section{
     background-color: white;
     max-width: 600px;
@@ -68,8 +68,13 @@ main section > p{
 }
 
 footer{
-    background-color: red;
+    background-color: rgb(69, 69, 255);
     color: white; 
+}
+
+footer p{
     text-align: center;
-    padding: 10px;   
+    padding: 10px;
+    font-weight: bold;
+    margin: 0%;
 }
