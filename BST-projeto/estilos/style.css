@@ -4,6 +4,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: rgb(255, 154, 154);
+}
 
 header{
     background-color: rgb(69, 69, 255);
@@ -44,7 +47,7 @@ nav > a:hover{
 
 main{
     margin-top: 37px;
-    background-color: rgb(255, 154, 154);
+    height: 100vh;
 }
 main section{
     background-color: white;
