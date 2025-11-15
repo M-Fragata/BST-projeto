@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url("../css/colors.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(128, 128, 128);
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--color-neutral-1);
+}
+
+header {
+    background-color: var(--color-primary-1);
+    padding: 12px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 50px;
+        }
+
+        ul {
+            display: none;
+
+
+            &.show {
+                display: flex;
+                flex-flow: column nowrap;
+                list-style: none;
+                text-decoration: none;
+                gap: .5rem;
+                width: 100%;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                background-color: var(--color-primary-1);
+                padding: 1rem;
+            }
+
+            li{
+                text-align: center;
+
+                a{
+                    text-decoration: none;
+                    color: var(--color-neutral-1);
+                    font-size: 1rem;
+                    font-weight: 500;
+                    transition: all .3s ease;
+
+                    &:hover{
+                        color: var(--color-secundary-2);
+                        border-bottom: 1px solid var(--color-secundary-2);
+                    }
+                }
+                
+                
+            }
+        }
+    }
+}
+
+section.headerImg{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height:calc(100dvh - 20dvh) ;
+    width: 100dvw;
+    max-width: 760px;
+    background-image: url("../imagens/bagres-pero.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
