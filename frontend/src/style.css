@@ -96,6 +96,10 @@ header {
         left: 0;
         flex-direction: column;
         background-color: #020242;
+        background-image: url(../assets/BarcelosMar.JPG);
+        background-size: cover;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+        background-position: center;
         width: 100%;
         height: auto; /* Ou 100vh se quiser que cubra a tela toda */
         padding: 2rem 0;
