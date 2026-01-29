@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe de Natação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="../assets/logo_bagres.png" alt="">
+                </a>
+                
+            </div>
+
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#provas">Provas</a></li>
+                <li><a href="#atletas">Atletas</a></li>
+                <li><a href="#treine">Treine Conosco</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+<section id="inicio" class="hero-container">
+    <div class="hero-content">
+        <div class="slider">
+            <div class="slide active">
+                <img src="../assets/BANANOLETA.jpg" alt="Atleta nadando borboleta">
+                <div class="hero-text">
+                    <h1>Equipe de Natação</h1>
+                    <p>Superando limites a cada braçada.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../assets/priscila.jpg" alt="Atleta priscila de frente ao mar">
+                <div class="hero-text">
+                    <h1>Treinos Intensos</h1>
+                    <p>Foco, disciplina e resultados.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../assets/RRM_PERO.JPG" alt="Equipe bagres reúnida pós prova RRM cabofrio">
+                <div class="hero-text">
+                    <h1>Venha Nadar Conosco</h1>
+                    <p>Inscrições abertas para a nova temporada.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</section>
+        <section id="provas" class="section">
+            <h1>Provas</h1>
+        </section>
+        <section id="atletas" class="section">
+            <h1>Atletas</h1>
+        </section>
+        <section id="treine" class="section">
+            <h1>Treine Conosco</h1>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
