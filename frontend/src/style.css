@@ -11,6 +11,7 @@
 body {
     background-color: #f3f3f3;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
 }
 
@@ -28,6 +29,13 @@ header {
     z-index: 1000;
 }
 
+footer{
+  padding: 10px;
+  text-align: center;
+  background-color: #020242;
+  color: white;
+}
+
 .navbar {
     max-width: 1300px;
     display: flex;
@@ -37,10 +45,15 @@ header {
     padding: 1rem 2rem;
 }
 
-
 .logo img {
     width: 22px;
     cursor: pointer;
+}
+
+.logo strong {
+    margin-left: 2px;
+    font-size: 1rem;
+    color: white;
 }
 
 .nav-list {
@@ -356,5 +369,101 @@ main {
     .sobre-galeria {
         order: 1;
         /* Foto aparece antes do texto no celular */
+    }
+}
+
+/* Sessão de conquistas */
+
+.conquistas-container {
+    padding: 80px 20px;
+    background-color: #020242;
+    display: flex;
+    justify-content: center;
+}
+
+.conquistas-content {
+    max-width: 1300px;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-sessao {
+    color: #ED3237;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo-sessao {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.cards-conquistas {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+
+.card-evento {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card-evento:hover {
+    transform: translateY(-10px);
+}
+
+.card-fotos {
+    position: relative;
+    height: 250px;
+}
+
+.foto-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-participacoes {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #ED3237;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-info {
+    padding: 25px;
+    text-align: left;
+}
+
+.card-info h3 {
+    color: #ED3237;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card-info p {
+    color: #000;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Ajuste para celular */
+@media (max-width: 600px) {
+    .titulo-sessao {
+        font-size: 2rem;
+    }
+
+    .card-fotos {
+        height: 200px;
     }
 }
