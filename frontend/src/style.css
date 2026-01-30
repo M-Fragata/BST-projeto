@@ -104,7 +104,7 @@ header {
         left: 0;
         flex-direction: column;
         background-color: #020242;
-        background-image: url(../assets/BarcelosMar.JPG);
+        background-image: url(../assets/inicio/BarcelosMar.JPG);
         background-size: cover;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
         background-position: center;
