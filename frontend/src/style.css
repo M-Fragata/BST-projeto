@@ -12,7 +12,7 @@ body {
     background-color: #f3f3f3;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -29,11 +29,12 @@ header {
     z-index: 1000;
 }
 
-footer{
-  padding: 10px;
-  text-align: center;
-  background-color: #020242;
-  color: white;
+footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #020242;
+    color: white;
 }
 
 .navbar {
