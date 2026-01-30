@@ -1,0 +1,119 @@
+header {
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+
+    background-color: #020242;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1300px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    width: 22px;
+    cursor: pointer;
+}
+
+.logo strong {
+    margin-left: 2px;
+    font-size: 1rem;
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilização do Menu Hambúrguer */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    /* Transição suave para todos os estados */
+}
+
+/* Animação para transformar em X */
+#mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+    /* Esconde a barra do meio */
+}
+
+#mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    /* Desce e gira a primeira barra */
+}
+
+#mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    /* Sobe e gira a terceira barra */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: -100vh;
+        /* Começa totalmente escondido acima da tela */
+        left: 0;
+        flex-direction: column;
+        background-color: #020242;
+        background-image: url(../assets/inicio/BarcelosMar.JPG);
+        background-size: cover;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+        background-position: center;
+        width: 100%;
+        height: auto;
+        /* Ou 100vh se quiser que cubra a tela toda */
+        padding: 2rem 0;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        /* Transição suave de descida */
+        z-index: -1;
+        /* Fica atrás do header para um efeito visual melhor */
+    }
+
+    .nav-list.active {
+        top: 60px;
+        /* Desce até logo abaixo do header (ajuste conforme a altura do seu header) */
+    }
+
+    .nav-list li {
+        margin: 15px 0;
+    }
+}

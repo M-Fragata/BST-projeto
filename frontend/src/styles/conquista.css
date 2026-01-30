@@ -1,0 +1,112 @@
+/* Sessão de conquistas */
+
+.conquistas-container {
+    padding: 80px 20px;
+    background-color: #020242;
+    display: flex;
+    justify-content: center;
+}
+
+.conquistas-content {
+    max-width: 1300px;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-sessao {
+    color: #ED3237;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo-sessao {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.cards-conquistas {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+
+
+.card-evento {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-fotos img:hover {
+    transform: translateY(-10px);
+}
+
+.card-galeria {
+    display: flex;
+}
+
+.card-fotos {
+    position: relative;
+    height: 450px;
+    padding: 10px;
+
+    img {
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+.foto-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-participacoes {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #ED3237;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-info {
+    padding: 25px;
+    text-align: left;
+}
+
+.card-info h3,
+.card-evento h3 {
+    color: #ED3237;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card-info p {
+    color: #000;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Ajuste para celular */
+@media (max-width: 600px) {
+    .titulo-sessao {
+        font-size: 2rem;
+    }
+
+    .card-fotos {
+        height: 200px;
+    }
+}
